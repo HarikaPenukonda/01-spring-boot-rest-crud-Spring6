@@ -4,15 +4,15 @@ public class StudentErrorResponse {
 
     private int status;
 
-    private int message;
+    private String message;
 
-    private int timeStamp;
+    private long timeStamp;
 
     public StudentErrorResponse() {
 
     }
 
-    public StudentErrorResponse(int status, int message, int timeStamp) {
+    public StudentErrorResponse(int status, String message, long timeStamp) {
         this.status = status;
         this.message = message;
         this.timeStamp = timeStamp;
@@ -26,19 +26,19 @@ public class StudentErrorResponse {
         this.status = status;
     }
 
-    public int getMessage() {
+    public String getMessage() {
         return message;
     }
 
-    public void setMessage(int message) {
+    public void setMessage(String message) {
         this.message = message;
     }
 
-    public int getTimeStamp() {
+    public long getTimeStamp() {
         return timeStamp;
     }
 
-    public void setTimeStamp(int timeStamp) {
+    public void setTimeStamp(long timeStamp) {
         this.timeStamp = timeStamp;
     }
 }
